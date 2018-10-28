@@ -3,7 +3,9 @@
 # population_data.json contains world population data from 1960 to 2010
 
 
-import json 
+# from country_codes import get_country_codes 
+import json
+import pygal 
 filename = "population_data.json"
 
 # Load the data into a list
@@ -16,3 +18,4 @@ for pop_dict in pop_data:
         country_name = pop_dict["Country Name"]
         country_population = int(float(pop_dict["Value"]))
         print(country_name + " : " + str(country_population))
+
