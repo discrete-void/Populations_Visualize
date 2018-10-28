@@ -25,6 +25,17 @@ for pop_dict in pop_data:
         if code: 
             # print(code + " : " + str(country_population))
             cc_populations[code] = country_population
+# In order to make the maps visually acceptable, we are going to group the map into three categores below
+cc_pops_1, cc_pops_2, cc_pops_3 = {}, {}, {}
+for cc, pop in cc_populations.items():
+    if pop < 10000000:
+        cc_pops_1[cc] = pop
+    elif pop < 1000000000:
+        cc_pops_2[cc] = pop
+    else:
+        cc_pops_3[cc] = pop
+# See how many countries are in each level
+print(len(cc_pops_1), len(cc_pops_2), len(cc_pops_3))
         
 
 # # Building our first americas map
@@ -45,9 +56,16 @@ for pop_dict in pop_data:
 # world_map1.render_to_file('na_populations.svg')
 
 
+# world_map3 = pygal.maps.world.World()
+# world_map3.title = 'World Population in 2010, by Country'
+# world_map3.add('2010', cc_populations)
+# world_map3.render_to_file('world_population.svg')
 
 
-world_map3 = pygal.maps.world.World()
-world_map3.title = 'World Population in 2010, by Country'
-world_map3.add('2010', cc_populations)
-world_map3.render_to_file('world_population.svg')
+# Now we build our final world population map
+final_world_map = pygal.maps.world.World()
+final_world_map.title = "World Population as at 2010 categorised by countries"
+final_world_map.add('0-10m', cc_pops_1)
+final_world_map.add('10m-1bn', cc_pops_2)
+final_world_map.add('>1bn', cc_pops_3)
+final_world_map.render_to_file('categorised_world_population.svg')
