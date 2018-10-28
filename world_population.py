@@ -6,6 +6,7 @@
 # from country_codes import get_country_codes 
 import json
 import pygal 
+import countries
 filename = "population_data.json"
 
 # Load the data into a list
