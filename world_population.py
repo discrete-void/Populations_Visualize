@@ -14,5 +14,5 @@ with open(filename) as f:
 for pop_dict in pop_data:
     if pop_dict["Year"] == "2010":
         country_name = pop_dict["Country Name"]
-        country_population = pop_dict["Value"]
-        print(country_name + " : " + country_population)
+        country_population = int(pop_dict["Value"])
+        print(country_name + " : " + str(country_population))
