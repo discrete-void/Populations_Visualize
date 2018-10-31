@@ -4,8 +4,8 @@
 ###Project Objectives:
 1. Map out North, Central and South America from the World Map using colors
 2. The World Population as at 2010 categorised based on countries  
-3. 3.Infographics of Populations as regards countries in North America
-4.Infographics of the world population in 2010 by country,[The darker the region the more populated it is]
+3. Infographics of Populations as regards countries in North America
+4. Infographics of the world population in 2010 by country,[The darker the region the more populated it is]
 
 ###Project Dependencies:
 1. Pygal [Open Source Data Visualization Module]
@@ -15,7 +15,7 @@
 This project attempts to use Python to visualize the population of the AMERICAS[North, Central and South America], and then world 
 population, it reads the population data from a json file and then visualizes the population data in the json file on a map in accordance to the numerical value of the population of the regions displayed on the map, all 
 rendered in an svg file. The svg file can be viewed in the browser and an interactive visualization of the the map can be seen
-
+through a browser
 ##1.Mapping Out the AMERICAS from the world 
 ```
 The image below shows North America, Central America
