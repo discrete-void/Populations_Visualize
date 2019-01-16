@@ -40,4 +40,4 @@ and South America](1.PNG "Mapping the AMERICAS")
 ![Infographics of the world population in 2010 by country](4.PNG "")
 
 
-## Special Thanks to [Open Knowledge Foundation](http://data.okfn.org/) now [Datahub.io](https://datahub.io/) for heartily making the dataset freely available.
+## Special Thanks to [Open Knowledge Foundation](http://data.okfn.org/) now [Datahub.io](https://datahub.io/) for heartily making the dataset freely available.:heart:
